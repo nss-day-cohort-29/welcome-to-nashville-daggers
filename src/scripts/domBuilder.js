@@ -9,7 +9,7 @@ const domBuilder =  {
       // Declare a variable to hold the fields to be created.
       // Picking the id "form-container"
       let userEntryFields = document.getElementById("form-container");
-        
+
       // The search results and itinerary sections below may need to be in a different function...but I have left them visible for now.
       userEntryFields.innerHTML = `
         <form>
