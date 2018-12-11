@@ -4,3 +4,6 @@ button {
 input {
     width: 200px;
 }
+.search-container {
+    border: red dashed 1px;
+}
