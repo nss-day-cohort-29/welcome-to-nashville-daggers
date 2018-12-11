@@ -4,10 +4,7 @@
 // Fetch function established.
 const diningData = {
     getDiningInfo() {
-        return fetch("https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city", {
-            headers: {
-                "user-key": "e1d3af0b02cdacf4bfda4e12e2efcd99",
-            }})
+        return fetch("http://localhost:8088/restaurants")
             // Promise 1.
             .then(response => response.json())
             // Promise 2.
@@ -18,3 +15,4 @@ const diningData = {
         }};
 // Calling the function within the object.
 diningData.getDiningInfo();
+ 
