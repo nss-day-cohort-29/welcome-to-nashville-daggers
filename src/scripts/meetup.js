@@ -1,4 +1,7 @@
 // MEETUP API FUNCTION
+let meetupAPI =
+  "https://www.eventbriteapi.com/v3/events/search/?location.latitude=36.174465&location.longitude=-86.767960&sort_by=date";
+let token = "6N5OUUJLQ4DKLVS36OOK";
 const meetup = {
   getMeetup() {
     return fetch(
