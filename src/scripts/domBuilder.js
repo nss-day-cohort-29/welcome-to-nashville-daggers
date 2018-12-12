@@ -4,7 +4,7 @@ const domBuilder =  {
     searchFormBuilder() {
       // Added a function is vanilla JS to initialize cursor on the first input.
       window.onload = function() {
-        document.getElementById("park_search").focus();
+        document.getElementById("park_search_bar").focus();
       };
       // Declare a variable to hold the fields to be created.
       // Picking the id "form-container"
@@ -17,17 +17,17 @@ const domBuilder =  {
           <fieldset>
             <legend> Search for stuff to do today: </legend>
               <section>
-                <input type="text" name="parks" id="park_search" placeholder="Search Parks by Feature" focus> 
-                <button type="button" id="park_search">Search Parks</button>
+                <input type="text" name="parks" id="park_search_bar" placeholder="Search Parks by Feature" focus> 
+                <button type="button" id="park_search_btn">Search Parks</button>
               </br>
-                <input type="text" name="restaurants" id="dine_search" placeholder="Search Restaurants by Food Type"> 
-                <button type="button" id="dine_search">Search Restaurants</button>
+                <input type="text" name="restaurants" id="dine_search_bar" placeholder="Search Restaurants by Food Type"> 
+                <button type="button" id="dine_search_btn">Search Restaurants</button>
               </br>
-                <input type="text" name="meetups" id="meet_search" placeholder="Search Meetups by Topic"> 
-                <button type="button" id="meet_search">Search Meetups</button>
+                <input type="text" name="meetups" id="meet_search_bar" placeholder="Search Meetups by Topic"> 
+                <button type="button" id="meet_search_btn">Search Meetups</button>
               </br>
-                <input type="text" name="concerts" id="show_search" placeholder="Search Concerts by Genre"> 
-                <button type="button" id="show_search">Search Live Shows</button>
+                <input type="text" name="concerts" id="show_search_bar" placeholder="Search Concerts by Genre"> 
+                <button type="button" id="show_search_btn">Search Live Shows</button>
             </section>    
         </form>`;  
     },

@@ -1,12 +1,19 @@
 const concertData = {
     getConcerts() {
-        return fetch("https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&dmaId=343&apikey=lXF5cl6UEBDo2U4Mdnab2ATtQajczyPi"
-)
-.then(results => results.json())
-.then(post => console.log(post));
+        fetch("https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&dmaId=343&apikey=lXF5cl6UEBDo2U4Mdnab2ATtQajczyPi")
+            .then(results => results.json())
+            .then(post => console.log(post));
     }
 };
 concertData.getConcerts();
+
+const concertSearchData = {
+    getConcertSearch() {
+        fetch(`https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&dmaId=343&apikey=lXF5cl6UEBDo2U4Mdnab2ATtQajczyPi&keyword=${concertInput}`)
+            .then(results => results.json())
+            .then(post => console.log(post));
+    }
+};
 
 // const concertData = {
 //     getConcertInfo() {
